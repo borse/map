@@ -1,0 +1,231 @@
+/* CSS Document */ 
+
+
+.textfield {
+	font-size: 11px;
+	color: #333333;
+	background: #F7F7F7;
+	border: 1px solid #CCCCC;
+	padding-left: 1px;
+}
+h1 {
+	color: #F00;
+	margin: 0px 0px 5px;
+	padding: 0px 0px 3px;
+	font: bold 200% Verdana, Arial, Helvetica, sans-serif;
+	text-align:left;
+	
+	
+}
+
+body {
+	
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #0000;
+	margin: 0px;
+	padding: 20px 10px 0px;
+	background-color: #F1F1F1;
+
+		
+}
+
+
+
+
+
+
+a {
+	color: #2D3954;
+	font-size: 11px;
+	
+	
+	
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+.menu_bar {
+	
+text-align:right;	
+}
+a:hover {
+	color: #F00;
+
+padding:2px;
+}
+.err {
+	color: #FF9900;	
+}
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+.float_breaker{
+clear:both;	
+}
+
+.info{
+font-size:11px;	
+font-family: 	"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.info b{
+color:#09F;	
+}
+.info b:hover{
+	cursor:pointer;
+	
+	
+	 background-color:#A8CAFD;
+
+}
+.info b:hover{
+	cursor:pointer;
+	
+ 
+	 background-color:#A8CAFD;
+
+}
+info b a:hover{
+	cursor:pointer;
+	
+	text-decoration:none;
+	 background-color:#A8CAFD;
+
+}
+
+ /* ------- divs-------*/
+ 
+ 
+ #map
+ {
+	 
+    margin:200px;
+	 height:1000px;
+	 width:1000px;
+	 background-color:#CCC;
+ 
+	 z-index:1;
+	 
+ }
+ 
+ .square_g
+  {
+	  	
+	  width:100px;
+	  height:100px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#fff;
+	  float:left;
+	    
+}
+
+ .square_r
+  {
+	  	
+	  width:100px;
+	  height:100px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#000;
+	  float:left;
+	    
+}
+
+  
+  .square_1
+  {
+	  
+	  width:100px;
+	  height:100px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#0F6;
+	 
+	  
+	  
+  }
+  .square_1_bot
+  {
+	  
+	  width:100px;
+	  height:100px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#0F6;
+	  float:bot;
+	  
+	  
+  }
+  
+  .square_2
+  {
+	  
+	  width:200px;
+	  height:200px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#0FF;
+	 
+	  
+  }
+  
+  .square_3
+  {
+	  
+	  width:300px;
+	  height:200px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+     background-color:#009;
+	  
+	  
+	  
+  }
+  
+  .square_4
+  {
+	  
+	  width:400px;
+	  height:200px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#603;
+	 
+	   
+  }
+  .square_5
+  {
+	  
+	  width:500px;
+	  height:200px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#F00;
+	 
+	  
+  }
+  
+  .break{
+	clear:both;  
+  }

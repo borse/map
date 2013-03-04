@@ -1,0 +1,218 @@
+// JavaScript Document
+ //object ,  http://www.youtube.com/watch?feature=player_detailpage&v=9s733mQqxgE#t=432s
+
+
+ 
+
+
+
+
+ 
+ //Variables: =============================================== --- VARIABLES--- =======================================
+
+ var res=
+  {
+	  //create an empty div.. class = "div_animation_loader"
+	  loader: $('<div />',{class: 'div_animation_loader'}),
+		
+		//select the container of this div
+	  container: $('#div_print_table') 
+	  
+ }//end of res
+ 
+ 
+//draw 2d array, fill it with zeros 
+arrayz=Create2DArray(10,10);
+ 
+ 
+//add squars to array
+ arrayz[0][0]=2	;
+ arrayz[0][2]=1;
+ arrayz[0][3]=5;
+ arrayz[2][2]=1;
+ arrayz[5][7]=3;
+arrayz[6][2]=5;
+ arrayz[3][0]=3;
+ arrayz[2][3]=4;
+ arrayz[8][6]=2;
+
+
+//Events: ===================================================== --- EVENTS--- =======================================
+ 
+  	$(document).ready(function() {
+ 
+	//get maps coordients, top left corner of map , map 0,0
+ 	var Mapx = $("#map").offset().left;
+	var Mapy = $("#map").offset().top;
+	
+	//px is the pointer for appartments
+	var Px =Mapx;
+	var Py = Mapy;
+
+	console.log('x: ' + Px + ' y: ' + Py);
+	
+	//counter for appartments
+	var app_counter=0;
+	
+	//go through array, , each number = 100px.. 
+	for (var y=0;y<10;y++) 
+	{
+     
+		for (var x=0;x<10;x++)
+		{
+			
+			var app_size= arrayz[y][x];
+	 
+			 //if size is bigger than 0, draw app div
+			if(app_size>0)
+			 {
+				 
+				 //appartment counter is used to name the div_id
+				 app_counter++;
+				 insert_appartment(app_size,app_counter,Px,Py);
+					
+				//altho size of appartment maybe greater than 100px.. we only skip 100px here, because there will be a bunch of zeros behind it, to 
+				//to crosspond for its size
+				Px=Px+100;
+				 
+				 
+			 
+			 }if(arrayz[y][x]==0)
+			 {
+				//if zero skip on step to the right
+				 Px=Px+100;
+			 }//end of if
+				 
+		 	
+		}//end of for x
+		
+		//row done,
+		//go down one row
+		Py+=100;
+		//rest x positoin to far left
+		Px = Mapx;
+		
+   }//end of for y
+
+	
+	
+ 	
+  
+	
+   
+  
+  
+   
+   
+  
+  
+  
+   
+  
+ 
+ });
+
+//functions: =============================================== --- FUNCTIONS--- =======================================
+ function position_element(element_id,x,y) 
+ {
+	 //get the element
+	 
+	 var element=document.getElementById(element_id);
+ 		element.style.position="absolute";
+	 element.style.left=x+"px";
+	 element.style.top=y+"px";
+	 
+	 //$("#div_status_change").animate({ 
+     //   Left: "+=" +mouseLeft + "px",
+    //}, 1000 );
+	 
+	 
+	 
+		
+    //$('element').style.position = "absolute";
+	//$('element').style.top += mouseTop  	;
+	//$('element').style.left += mouseLeft   ;
+ 
+}
+
+function Create2DArray(rows,fields) {
+	
+	//bascially an array of arrays, each element of this array, contains an array
+  var arr = [];
+
+  for (var y=0;y<rows;y++) {
+     arr[y] = [];
+	  
+	  for (var x=0;x<fields;x++)
+	  {
+	  arr[y][x]=0;
+	  }
+  }
+
+  return arr;
+}
+
+//draws appartment div in map
+function insert_appartment(size,app_id,x,y)
+{
+	switch(size)
+			{
+				case 1:
+				
+						//add appartment div, give it app_id, which is is the appartment counter,.. and finally add class
+					  $("#map").append('<div id= "app_'+ app_id +'" class="square_1"></div>');
+						//position the div in the right place...  
+					  position_element('app_'+app_id,x,y) ;
+						
+					
+					  break;
+					  
+			 
+			
+				case 2:
+				
+					
+					  $("#map").append('<div id= "app_'+ app_id +'" class="square_2"></div>');
+					  position_element('app_'+app_id,x,y) ;
+						
+					
+					  break;	
+				case 3:
+				
+					
+					  $("#map").append('<div id= "app_'+ app_id +'" class="square_3"></div>');
+					  position_element('app_'+app_id,x,y) ;
+						
+					
+					  break;
+					  
+			 
+			
+				case 4:
+				
+					
+					  $("#map").append('<div id= "app_'+ app_id +'" class="square_4"></div>');
+					  position_element('app_'+app_id,x,y) ;
+						
+					
+					  break;		
+				case 5:
+				
+					
+					  $("#map").append('<div id= "app_'+ app_id +'" class="square_5"></div>');
+					  position_element('app_'+app_id,x,y) ;
+						
+					
+					  break;
+					  
+			 
+			
+				 
+				  
+				default:
+					//push element 100px and draw nothing
+			}//end of switch
+	
+	
+}
+  	 	
