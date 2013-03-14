@@ -1,5 +1,11 @@
 // JavaScript Document
 //================================= Wrappers====================================
+function randomlink()
+{//generate random number
+	var totalItems= 5;
+    return Math.floor(Math.random()*totalItems+1);//return a number between 1 - 10
+}
+ 
  
 //================================= ANIMATION FUNCTIONS===================
 

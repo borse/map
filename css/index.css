@@ -123,7 +123,10 @@ info b a:hover{
 	  z-index:2;
 	  background-color:#fff;
 	  float:left;
-	    
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
+	 
 }
 
  .square_r
@@ -137,6 +140,9 @@ info b a:hover{
 	  z-index:2;
 	  background-color:#000;
 	  float:left;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	    
 }
 
@@ -151,6 +157,9 @@ info b a:hover{
 	  overflow:hidden;
 	  z-index:2;
 	  background-color:#0F6;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	 
 	  
 	  
@@ -166,6 +175,9 @@ info b a:hover{
 	  z-index:2;
 	  background-color:#0F6;
 	  float:bot;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	  
 	  
   }
@@ -180,6 +192,9 @@ info b a:hover{
 	  overflow:hidden;
 	  z-index:2;
 	  background-color:#0FF;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	 
 	  
   }
@@ -194,6 +209,9 @@ info b a:hover{
 	  overflow:hidden;
 	  z-index:2;
      background-color:#009;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	  
 	  
 	  
@@ -209,6 +227,9 @@ info b a:hover{
 	  overflow:hidden;
 	  z-index:2;
 	  background-color:#603;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	 
 	   
   }
@@ -222,6 +243,9 @@ info b a:hover{
 	  overflow:hidden;
 	  z-index:2;
 	  background-color:#F00;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
 	 
 	  
   }
