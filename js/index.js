@@ -268,7 +268,7 @@ function draw_map()
 	
 	//px is the pointer for appartments
 	var Px =Mapx;
-	var Py = Mapy;
+	var Py = Mapy+10;
 
 	console.log('x: ' + Px + ' y: ' + Py);
 	
@@ -288,6 +288,7 @@ function draw_map()
 			if(app_size>0)
 			 {
 				 
+				 Px=Px+10;
 				 //appartment counter is used to name the div_id
 				 app_counter++;
 				 insert_appartment(app_size,app_counter,Px,Py);
@@ -300,8 +301,9 @@ function draw_map()
 			 
 			 }if(arrayz[y][x]==-1 || arrayz[y][x]==0 )
 			 {
-				//if zero skip on step to the right
-				 Px=Px+100;
+				 
+				//if zero skip one step to the right
+				 Px=Px+110;
 			 }//end of if
 				 
 		 	
@@ -309,7 +311,7 @@ function draw_map()
 		
 		//row done,
 		//go down one row
-		Py+=100;
+		Py+=110;
 		//rest x positoin to far left
 		Px = Mapx;
 		

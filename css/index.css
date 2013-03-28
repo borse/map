@@ -24,7 +24,7 @@ body {
 	color: #0000;
 	margin: 0px;
 	padding: 20px 10px 0px;
-	background-color: #F1F1F1;
+	background-color: #fff;
 
 		
 }
@@ -104,9 +104,9 @@ info b a:hover{
  {
 	 
     margin:200px;
-	 height:1000px;
-	 width:1000px;
-	 background-color:#CCC;
+	 height:1110px;
+	 width:1110px;
+	 background-color:#000	;
  
 	 z-index:1;
 	 
@@ -147,23 +147,7 @@ info b a:hover{
 }
 
   
-  .square_1
-  {
-	  
-	  width:100px;
-	  height:100px;
-	  margin:0px;
-	  padding:0px;
-	  overflow:hidden;
-	  z-index:2;
-	  background-color:#0F6;
-	  border-style:solid;
-	  border-width:1px;
-	  border-color: #000;
-	 
-	  
-	  
-  }
+  
   .square_1_bot
   {
 	  
@@ -182,16 +166,34 @@ info b a:hover{
 	  
   }
   
-  .square_2
+  .square_1
   {
 	  
-	  width:200px;
-	  height:200px;
+	  width:100px;
+	  height:100px;
 	  margin:0px;
 	  padding:0px;
 	  overflow:hidden;
 	  z-index:2;
-	  background-color:#0FF;
+	  background-color:#2F4F4F;
+	  border-style:solid;
+	  border-width:1px;
+	  border-color: #000;
+	 
+	  
+	  
+  }
+  
+  .square_2
+  {
+	  
+	  width:210px;
+	  height:210px;
+	  margin:0px;
+	  padding:0px;
+	  overflow:hidden;
+	  z-index:2;
+	  background-color:#708090;
 	  border-style:solid;
 	  border-width:1px;
 	  border-color: #000;
@@ -202,13 +204,13 @@ info b a:hover{
   .square_3
   {
 	  
-	  width:300px;
-	  height:200px;
+	  width:320px;
+	  height:210px;
 	  margin:0px;
 	  padding:0px;
 	  overflow:hidden;
 	  z-index:2;
-     background-color:#009;
+     background-color:#696969;
 	  border-style:solid;
 	  border-width:1px;
 	  border-color: #000;
@@ -220,13 +222,13 @@ info b a:hover{
   .square_4
   {
 	  
-	  width:400px;
-	  height:200px;
+	  width:430px;
+	  height:210px;
 	  margin:0px;
 	  padding:0px;
 	  overflow:hidden;
 	  z-index:2;
-	  background-color:#603;
+	  background-color:#A9A9A9;
 	  border-style:solid;
 	  border-width:1px;
 	  border-color: #000;
@@ -236,13 +238,13 @@ info b a:hover{
   .square_5
   {
 	  
-	  width:500px;
-	  height:200px;
+	  width:540px;
+	  height:210px;
 	  margin:0px;
 	  padding:0px;
 	  overflow:hidden;
 	  z-index:2;
-	  background-color:#F00;
+	  background-color:#D3D3D3;
 	  border-style:solid;
 	  border-width:1px;
 	  border-color: #000;
